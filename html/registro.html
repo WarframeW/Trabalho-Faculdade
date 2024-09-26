@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!--CSS-->
+    <link rel="stylesheet" href='/css/registro.css'>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+
+    <!--icons-->
+    <script src="https://kit.fontawesome.com/fe141562f7.js" crossorigin="anonymous"></script>
+
+    <!--JAVA-->
+    <script src="/java/cpf.js"></script>
+    <script src="/java/data.js"></script>
+    <script src="/java/telefone.js"></script>
+    <script src="/java/validação-dados.js"></script>
+    <script src="/java/banco.js"></script>
+
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Receitas UNISUAM</h1>
+    </header>
+    <br>
+    <main>
+        <form id="formular" autocomplete="on" action="/html/cep.html" onsubmit="validarSenha(event);">
+            <p>entrar com</p>
+            <section id="icons">
+                <a id="face" href="https://www.facebook.com/?locale=pt_BR">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a id="insta" href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a id href="https://x.com/home">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </section>
+            <p>Registre-se</p>
+
+            <label for="">Nome*:</label>
+            <input type="text" id="nome" placeholder="Digite seu Nome" minlength="15" maxlength="80" required>
+            </input>
+
+
+            <label for="">Data De Nascimento</label>
+            <input type="text" name="dtNascimento" id="idDtNascimento" maxlength="10" onkeydown="ajustaData(this)"
+                onkeyup="ajustaData(this)" onkeydown="ajustaData(this)" name="datemax" max="2005-01-01" required
+                placeholder="DD/MM/YYYY">
+            </input>
+
+            <label for="">Genero</label>
+            <select id="genero" required>
+                <option value="">Selecione o Gênero</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>       
+
+            <label>CPF</label>
+            <input type="text" name="documento" id="idDocumento" onkeydown="ajustaCpf(this)" onkeyup="ajustaCpf(this)"
+                onkeydown="ajustaCpf(this)" onblur="validarCPF(this)" required placeholder="Digite seu documento"
+                maxlength="14" required>
+            </input>
+
+
+            <label for="">E-mail*</label>
+            <input type="email" id="email" placeholder="Digite Seu Email" required>
+
+
+            <label for="">Telefone</label>
+            <input type="text" name="telefone" id="idTelefone" onkeydown="ajustaTelefone(this)"
+                onkeypress="ajustaTelefone(this)" onkeyup="ajustaTelefone(this)" maxlength="15" required
+                placeholder="Digite Seu Numero">
+            </input>
+
+
+
+            <label for="">login</label>
+            <input type="text" id="login" placeholder="crie um login" maxlength="6" required>
+
+
+            <label for="">senha</label>
+            <input type="password" id="senha" placeholder="crie uma senha" maxlength="8" required>
+
+            <label for="">confirme sua senha</label>
+            <input type="password" id="confirmar-senha" placeholder="confirme sua senha" required>
+
+
+            <div class="button-container">
+                <button type="submit">Avançar</button>
+                <button type="reset">Limpar</button>
+            </div>
+
+        </form>
+    </main>
+    <br>
+    <footer>
+        <span>Trabalho feito por: Felipe Augusto Da Silva De Paula, Gabriel, Guilher e eduardo</span>
+    </footer>
+</body>
+
+</html>

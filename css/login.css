@@ -1,0 +1,92 @@
+
+header {
+    background: radial-gradient(circle, rgba(128,0,0,1) 0%, rgba(61,43,31,1) 100%);
+    color: #EFC7C2;
+    padding: 3px;
+    text-align: center;
+    margin-top: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+body{
+    background-image: url(https://wallpapers.com/images/hd/best-food-background-07o89ooony6airsk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Adicionado para ajustar a imagem ao tamanho da tela */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    min-height: 100vh; /* Garante que o body ocupe 100% da altura da tela */
+    display: flex;
+    min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da viewport */
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Faz com que o main ocupe o espaço disponível */
+}
+
+
+#formular{
+    background: radial-gradient(circle, rgba(128,0,0,1) 0%, rgba(61,43,31,1) 100%);
+    border-radius: 15px;
+    padding: 12px;
+    border:solid 1px red;
+    color: #EFC7C2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Ajustado para melhor alinhamento interno */
+    max-width: 90%; /* Limita a largura para ser mais responsivo */
+    width: 300px;
+    margin: 0 auto;
+    box-sizing: border-box; /* Adicionado para incluir padding e border no tamanho total */
+    font-size: 15px;
+    margin-top: 130px;
+    
+
+}
+
+#formular label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#formular input{
+    padding: 10px;
+    border-radius: 500px;
+    border: solid 1px white;
+    min-width: 250px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+#formular ::placeholder{
+    text-align: center;
+}
+
+
+.button-container button{
+    display: inline-block;
+    margin: 5px; /* Adiciona espaçamento entre os botões */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+footer {
+    background: radial-gradient(circle, rgba(128,0,0,1) 0%, rgba(61,43,31,1) 100%);
+    color: #EFC7C2; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 1rem;/* Tamanho da fonte */
+    border-radius: 12px;
+    margin-top: auto; /* Faz o footer ir para o fim da página */
+    
+}

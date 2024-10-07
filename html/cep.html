@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/cep.css">
 
     <!--js-->
-    <script src="/java/CEP.js"></script>
+    <script src="/JS/CEP.js"></script>
 </head>
 
 <body>
@@ -19,20 +19,23 @@
     </header>
 
     <main>
+        
         <!-- Inicio do formulario -->
         <form method="get" action="/html/login.html" id="formular">
+
+
+            <h3>digite suas informações</h3>
+
             <label>Cep:
-                <input name="cep" type="text" id="cep" value="" maxlength="9" /></label><br />
+                <input name="cep" type="text" id="cep" value="" maxlength="9" placeholder="digite seu cep" /></label><br />
             <label>Rua:
-                <input name="rua" type="text" id="rua" /></label><br />
+                <input name="rua" type="text" id="rua" placeholder="digite sua rua" /></label><br />
             <label>Bairro:
-                <input name="bairro" type="text" id="bairro" /></label><br />
+                <input name="bairro" type="text" id="bairro" placeholder="digite seu Bairro"/></label><br />
             <label>Cidade:
-                <input name="cidade" type="text" id="cidade" /></label><br />
+                <input name="cidade" type="text" id="cidade" placeholder="digite sua cidade"/></label><br />
             <label>Estado:
-                <input name="uf" type="text" id="uf" /></label><br />
-            <label>IBGE:
-                <input name="ibge" type="text" id="ibge" /></label><br />
+                <input name="uf" type="text" id="uf" placeholder="digite seu estado"/></label><br />
 
             <div class="button-container">
                 <button type="submit">Enviar</button>

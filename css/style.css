@@ -1,0 +1,143 @@
+.meusprojetos {
+  font-family: sans-serif;
+  color: black;
+  text-align: center;
+}
+
+.font-monospace {
+  font-size: 35px;
+}
+.subtitulo {
+  font-size: 15px;
+}
+
+#botaoregistrar {
+
+  margin-right: 10pxq;
+}
+
+
+.image-container,
+.image-container1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  transition: 0.5s ease;
+}
+
+.image-container:hover .image,
+.image-container1:hover .image {
+  filter: brightness(50%);
+}
+
+.text-overlay,
+.text-overlay2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  transition: 0.5s ease;
+}
+
+.text-overlay a,
+.text-overlay2 a {
+  color: white;
+  text-decoration: none;
+}
+
+.text-overlay a:hover,
+.text-overlay2 a:hover {
+  text-decoration: underline;
+}
+
+/* Estilização para a lista de contatos */
+.redes-contatos {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  gap: 40px;
+  display: flex;
+  position: relative;
+  top: -750px;
+}
+
+
+.redes-contatos li {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(250, 102, 22);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: .2s;
+}
+
+.redes-contatos li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.redes-contatos .icon i {
+  font-size: 20px;
+  margin-bottom: 5px;
+  transition: .1s;
+}
+
+.redes-contatos .text {
+  font-size: 14px;
+  text-align: center;
+}
+
+.redes-contatos li:hover {
+  width: 180px;
+}
+
+.redes-contatos li span {
+  position: absolute;
+}
+
+.redes-contatos li .icon {
+  color: #ffffff;
+  font-size: 2.2em;
+}
+
+.redes-contatos li .text {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  transform: scale(0);
+  transition: .2s;
+  transition-delay: .1s;
+}
+
+.redes-contatos li:hover .text {
+  transform: scale(1);
+}
+
+.redes-contatos li:hover .icon {
+  transform: scale(0);
+}
+
+/* Adicionando responsividade */
+@media (max-width: 768px) {
+  .redes-contatos {
+    flex-direction: column; /* Muda para coluna em telas menores */
+    align-items: center; /* Centraliza os itens */
+    gap: 20px; /* Reduz o gap para itens em coluna */
+  }
+}
+

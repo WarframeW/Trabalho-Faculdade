@@ -1,28 +1,12 @@
-function confereUsuario(event){
-    event.preventDefault();
 
-    const usuario= document.getElementById("idLogin").value;
-    const senha = document.getElementById("idSenha").value;
-    
-    // validar usuario via banco
-
-     localStorage.setItem('user',usuario);
-
-    //Fazer redirect para a pagina principal
-
-
-    window.location.href = "./principal.html"; 
-
-    
-
-
-
-    // if (login==usuario.value && pass==senha.value) {
-        
-    //     alert("USUÁRIO LOGADO COM SUCESSO");
-    //     window.location.href = "./principal.html";  
-    // }else{
-    //     alert("USUÁRIO   E SENHA INVÁLIDOS");
-    // }
-
-}
+function maiuscula(texto) {
+    texto.value = texto.value.toUpperCase();
+  }
+  
+  function ajustaData(v) {
+    v.value = v.value.replace(/\D/g, "");
+    //Adiciona a barra entre o dia e o mês
+    v.value = v.value.replace(/^(\d{2})(\d)/, "$1/$2");
+    //Adiciona a barra entre o mês e o ano
+    v.value = v.value.replace(/(\d{2})(\d)/, "$1/$2");
+  }

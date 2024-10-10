@@ -1,23 +1,21 @@
-
 header {
-    background: radial-gradient(circle, rgba(128,0,0,1) 0%, rgba(61,43,31,1) 100%);
+    background: white;
     color: #EFC7C2;
-    padding: 3px;
     text-align: center;
     margin-top: 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    
 }
 
 
 
 body{
-    background-image: url(https://wallpapers.com/images/hd/best-food-background-07o89ooony6airsk.jpg);
+    background-image: url(/img/fundo.webp);
     background-repeat: no-repeat;
     background-size: cover; /* Adicionado para ajustar a imagem ao tamanho da tela */
     text-align: center;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
     min-height: 100vh; /* Garante que o body ocupe 100% da altura da tela */
     display: flex;
     min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da viewport */
@@ -30,11 +28,11 @@ main {
 
 
 #formular{
-    background: radial-gradient(circle, rgba(128,0,0,1) 0%, rgba(61,43,31,1) 100%);
+    background-color: whitesmoke;
     border-radius: 15px;
     padding: 12px;
-    border:solid 1px red;
-    color: #EFC7C2;
+    border: solid 1px black;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,19 +42,20 @@ main {
     margin: 0 auto;
     box-sizing: border-box; /* Adicionado para incluir padding e border no tamanho total */
     font-size: 15px;
-    margin-top: 60px;
+    margin-top: 140px;
     
 
 }
 
 #formular label{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
 }
+
 
 #formular input{
     padding: 10px;
     border-radius: 500px;
-    border: solid 1px white;
+    border: solid 1px black;
     min-width: 250px;
     background-color: white;
     margin-bottom: 5px;
@@ -81,11 +80,10 @@ main {
 
 
 footer {
-    background: radial-gradient(circle, rgba(128,0,0,1) 0%, rgba(61,43,31,1) 100%);
-    color: #EFC7C2; /* Cor do texto */
+    background: whitesmoke;
+    color: black; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     padding: 10px; /* Espaçamento interno */
-    font-size: 1rem;/* Tamanho da fonte */
     border-radius: 12px;
     margin-top: auto; /* Faz o footer ir para o fim da página */
     

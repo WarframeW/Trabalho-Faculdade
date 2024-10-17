@@ -1,0 +1,57 @@
+body{
+    background-image: url(/img/camarao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Adicionado para ajustar a imagem ao tamanho da tela */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Garante que o body ocupe 100% da altura da tela */
+    display: flex;
+    min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da viewport */
+    flex-direction: column;
+}
+
+main{
+    display: flex;    
+    margin-top: 150px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    border: solid 1px black;
+    color: black;
+    max-width: 90%; /* Limita a largura para ser mais responsivo */
+    width: 1300px;
+    height: auto;
+    margin-left: 140px;
+
+}
+
+#titulo{
+    text-align: center;
+}
+
+.ingrediente{
+    color: black;
+    margin: 10px;
+}
+
+#ingredientes{
+    margin-left: 10px;
+}
+
+#mini{
+    width: 500px;
+}
+
+.vertical-line {
+    position: absolute; /* Para posicionar em relação ao pai */
+    left: 44%; /* Alinha ao meio da tela */
+    bottom: 0; /* Vai até o fundo */
+    width: 1px; /* Largura da linha */
+    background-color: black; /* Cor da linha */
+    z-index: 1; /* Para ficar sobre os outros elementos */
+    height: 580px;
+}
+ 
+
+

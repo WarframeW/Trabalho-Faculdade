@@ -31,8 +31,14 @@
 </head>
 
 <body>
+   
     <header>
         <nav class="navbar col-11 m-auto w-100 position-fixed navbar-expand-lg bg-body-tertiary" style="z-index: 1000;">
+
+            <a class="navbar-brand" href="/html/index.html">
+                <img src="/img/3565418.png" alt="Logo de Receitas" style="width: 50px; height: 50px;">
+            </a>
+
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -46,19 +52,16 @@
                             <a class="nav-link active" aria-current="page" href="/html/index.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"
-                                href="https://www.instagram.com/receitas_do_chef_?igsh=MnFtbnVueDg5ZWY1">Redes
-                                Sociais</a>
+                            <a class="nav-link" href="#">Redes Sociais</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">Receitas</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/html/todos.html">Todos</a></li>
+                                <li><a class="dropdown-item" href="PrimeiraTela.html">Todos</a></li>
                                 <li><a class="dropdown-item" href="#">Café</a></li>
                                 <li><a class="dropdown-item" href="#">Almoço</a></li>
                                 <li><a class="dropdown-item" href="#">Jantar</a></li>
-
                             </ul>
                         </li>
                     </ul>
@@ -67,13 +70,15 @@
                             onclick="window.location.href='./registro.html'">Registrar</button>
                         <button id="botaologin" class="btn btn-outline-success" type="button"
                             onclick="window.location.href='./login.html'">Login</button>
-
-
+    
+    
                     </form>
                 </div>
             </div>
         </nav>
+
     </header>
+    
     <br>
     <main>
         <form id="formular" autocomplete="on" action="/html/cep.html" onsubmit="validarSenha(event);">

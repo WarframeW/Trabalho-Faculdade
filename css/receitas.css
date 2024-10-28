@@ -1,0 +1,80 @@
+
+
+
+/*novo codigo */
+
+img {
+  width: 350px; /* Define a largura da imagem */
+  height: 350px; /* Define a altura da imagem */
+  object-fit: inherit; /* Mantém o estilo de ajuste de objeto */
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+.object-fit-contain {
+  object-fit: contain;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.object-fit-fill {
+  object-fit: fill;
+}
+
+.object-fit-scale {
+  object-fit: scale-down;
+}
+
+.object-fit-none {
+  object-fit: none;
+}
+
+.border {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+
+
+
+/* Estilo para o movimento de zoom */
+
+.zoom img {
+  transition: transform 0.3s ease, border-radius 0.3s ease; /* Suaviza a transição do zoom e mantém bordas arredondadas */
+
+}
+
+.zoom:hover img {
+  transform: scale(1.2); /* Aplica o efeito de zoom (20% maior) */
+}
+
+
+
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .figure-caption {
+      font-size: 0.9rem; /*Tamanho de legenda menor no celular */
+  }
+}
+
+@media (max-width: 576px) {
+  .figure-caption {
+      font-size: 0.8rem; /*Tamanho de legenda ainda menor em dispositivos muito pequenos */
+  }
+
+  /* Estilo adicional para telas pequenas */
+  nav {
+      padding: 10px 0; /* Reduza o preenchimento da barra de navegação em telas pequenas */
+  }
+}
+
+
+
+
+
+
+

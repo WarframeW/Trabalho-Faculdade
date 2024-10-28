@@ -16,13 +16,19 @@
 </head>
 
 <body>
+  
     <header>
         <nav class="navbar col-11 m-auto w-100 position-fixed navbar-expand-lg bg-body-tertiary" style="z-index: 1000;">
+
+            <a class="navbar-brand" href="/html/index.html">
+                <img src="/img/3565418.png" alt="Logo de Receitas" style="width: 50px; height: 50px;">
+            </a>
+
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -31,18 +37,16 @@
                             <a class="nav-link active" aria-current="page" href="/html/index.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"
-                                href="https://www.instagram.com/receitas_do_chef_?igsh=MnFtbnVueDg5ZWY1">Redes Sociais</a>
+                            <a class="nav-link" href="#">Redes Sociais</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">Receitas</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/html/todos.html">Todos</a></li>
+                                <li><a class="dropdown-item" href="PrimeiraTela.html">Todos</a></li>
                                 <li><a class="dropdown-item" href="#">Café</a></li>
                                 <li><a class="dropdown-item" href="#">Almoço</a></li>
                                 <li><a class="dropdown-item" href="#">Jantar</a></li>
-    
                             </ul>
                         </li>
                     </ul>
@@ -57,15 +61,16 @@
                 </div>
             </div>
         </nav>
+
     </header>
 
     <form class="box" onsubmit="confereUsuario(event)" id="formular" action="/html/index.html">
         <h1>Login</h1>
         <input type="text" name="login" id="idLogin" placeholder="Digite o usuário">
-        <br>
+        
         <br>
         <input type="password" name="senha" id="idSenha" placeholder="Digite a senha">
-        <br>
+        
         <br>
         <div class="button-container">
             <button type="submit">Avançar</button>
@@ -73,7 +78,7 @@
         </div>
         <br>
         <a href="/html/registro.html">Criar uma conta</a>
-        <br>
+        
         <a href="/html/esqueci-senha.html">Esqueci minha senha</a>
         </div>
     </form>

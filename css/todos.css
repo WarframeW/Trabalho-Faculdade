@@ -52,3 +52,37 @@
   li {
     margin-bottom: 8px;
   }
+
+
+  .button {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  justify-content: center; /* Alinha horizontalmente */
+  text-align: center; /* Centraliza o conteúdo do div */
+
+}
+
+.btn-secondary {
+  background-color: orangered;
+  color: white; /* Para garantir que o texto fique legível */
+}
+
+  /* Estilos responsivos */
+@media (max-width: 768px) {
+  .figure-caption {
+      font-size: 0.9rem; /*Tamanho de legenda menor no celular */
+  }
+}
+
+@media (max-width: 576px) {
+  .figure-caption {
+      font-size: 0.8rem; /*Tamanho de legenda ainda menor em dispositivos muito pequenos */
+  }
+
+  /* Estilo adicional para telas pequenas */
+  nav {
+      padding: 10px 0; /* Reduza o preenchimento da barra de navegação em telas pequenas */
+  }
+}

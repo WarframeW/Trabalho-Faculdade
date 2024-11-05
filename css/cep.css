@@ -7,6 +7,8 @@ header {
     
 }
 
+
+
 body{
     background-image: url(/img/fundo.webp);
     background-repeat: no-repeat;
@@ -85,15 +87,4 @@ footer {
     border-radius: 12px;
     margin-top: auto; /* Faz o footer ir para o fim da página */
     
-}
-
-.aumento{
-    margin: 5px;
-    border-radius: 20px;
-    background-color: #007BFF;
-    cursor: pointer;
-    padding-left: 20px;
-    
-
-
 }

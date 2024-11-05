@@ -1,8 +1,21 @@
+header {
+    background: white;
+    color: #EFC7C2;
+    text-align: center;
+    margin-top: 0px;
+
+    
+}
+
+
 
 body{
     background-image: url(/img/fundo.webp);
     background-repeat: no-repeat;
     background-size: cover; /* Adicionado para ajustar a imagem ao tamanho da tela */
+    text-align: center;
+    margin: 0;
+    padding: 0;
     min-height: 100vh; /* Garante que o body ocupe 100% da altura da tela */
     display: flex;
     min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da viewport */
